@@ -10,7 +10,6 @@ import './patient.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
-import Tooltip from 'react-tooltip-lite';
 import { useParams } from "react-router-dom";
 export default function App()
 {
