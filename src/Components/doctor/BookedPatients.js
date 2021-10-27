@@ -42,6 +42,7 @@ export default function App()
             const res = await Axios.get("https://voice-prescription-ai.herokuapp.com/doctor/selectPatients?doctorId="+ doctorId); 
             console.log(res.data)
             setItems(res.data);
+            console.log(items);
         }   
 
     /*    const getProfile = async () => {
