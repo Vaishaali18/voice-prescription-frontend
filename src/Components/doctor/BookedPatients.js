@@ -40,7 +40,7 @@ export default function App()
         const getDetails = async () => {
           console.log(doctorId)
             const res = await Axios.get("https://voice-prescription-ai.herokuapp.com/doctor/selectPatients?doctorId="+ doctorId); 
-            console.log(res.data)
+            console.log(res.data);
             setItems(res.data);
             console.log(items);
         }   
