@@ -214,7 +214,7 @@ export default function App()
         }
         const json = JSON.stringify(obj);
         console.log(json);
-        let res = await axios.post('https://fastapi-vaishaali18.cloud.okteto.net/pdf', json,{
+        let res = await axios.post('http://localhost:8000/pdf', json,{
             headers: {
                 'content-type': 'application/json'
               }
@@ -298,7 +298,7 @@ export default function App()
             console.log(obj);
             const json = JSON.stringify(obj);
             console.log(json);
-            let res = await axios.post('https://fastapi-vaishaali18.cloud.okteto.net/data', json,{
+            let res = await axios.post('http://localhost:8000/data', json,{
                 headers: {
                     'content-type': 'application/json'
                   }
