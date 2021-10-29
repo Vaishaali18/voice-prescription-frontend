@@ -223,7 +223,7 @@ export default function App()
             try {
                 const patientdetails={displayEmail,displayName,result1}
                 
-                const PdfRes=await axios.post("http://voice-prescription-ai.herokuapp.com/sendpdf",patientdetails);
+                const PdfRes=await axios.post("https://voice-prescription-ai.herokuapp.com/sendpdf",patientdetails);
                 Swal('Email','Email Sent Successfully!!!','success');
     
         }
