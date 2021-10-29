@@ -196,7 +196,40 @@ export default function App()
 	document.getElementById("refreshsig").style.visibility = "visible";
     };
 	const send = async () => {
-        sendMail("C:/Users/vaishaali/Downloads", patientId);
+        
+    //    sendMail("C:/Users/vaishaali/Downloads", patientId);
+    var obj = {};
+        var trans;
+        Object.entries({ value1 }).forEach(([key, value]) => {
+            trans = String(value);
+        });
+        if (text !== "") {
+            obj['data'] = String(text);
+        }
+        else {
+            obj['data'] = trans;
+        }
+        const json = JSON.stringify(obj);
+        console.log(json);
+          let res = await axios.post('https://voice-fastapi.herokuapp.com/data', json,{
+                headers: {
+                    'content-type': 'application/json'
+                  }
+            });
+            
+            let result1 = res.data;
+            console.log(result1);
+            
+            try {
+                const patientdetails={displayEmail,displayName,result1}
+                
+                const PdfRes=await axios.post("http://voice-prescription-ai.herokuapp.com/sendpdf",patientdetails);
+                Swal('Email','Email Sent Successfully!!!','success');
+    
+        }
+        catch (err) {
+            err.response.data.msg && Swal('Email','Error Occured while sending email','error')
+        }
     }
     //open preview view of prescription
     const handleShow = async () => {
