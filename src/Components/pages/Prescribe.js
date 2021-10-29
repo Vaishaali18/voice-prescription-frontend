@@ -151,7 +151,7 @@ export default function App()
       //       #const json = JSON.stringify(details);
        //     console.log(json)
         
-                const PdfRes=await axios.post("https://voice-fastapi.herokuapp.com/sendpdf",details);
+                const PdfRes=await axios.post("https://voice-prescription-ai.herokuapp.com/sendpdf",details);
 		        Swal('Email','Email Sent Successfully!!!','success');
 
             
