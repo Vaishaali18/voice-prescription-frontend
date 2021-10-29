@@ -151,7 +151,7 @@ export default function App()
       //       #const json = JSON.stringify(details);
        //     console.log(json)
         
-                const PdfRes=await axios.post("http://voice-fastapi.herokuapp.com/sendpdf",details);
+                const PdfRes=await axios.post("https://voice-fastapi.herokuapp.com/sendpdf",details);
 		        Swal('Email','Email Sent Successfully!!!','success');
 
             
@@ -214,7 +214,7 @@ export default function App()
         }
         const json = JSON.stringify(obj);
         console.log(json);
-        let res = await axios.post('http://voice-fastapi.herokuapp.com/pdf', json,{
+        let res = await axios.post('https://voice-fastapi.herokuapp.com/pdf', json,{
             headers: {
                 'content-type': 'application/json'
               }
@@ -298,7 +298,7 @@ export default function App()
             console.log(obj);
             const json = JSON.stringify(obj);
             console.log(json);
-            let res = await axios.post('http://voice-fastapi.herokuapp.com/data', json,{
+            let res = await axios.post('https://voice-fastapi.herokuapp.com/data', json,{
                 headers: {
                     'content-type': 'application/json'
                   }
