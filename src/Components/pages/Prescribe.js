@@ -520,9 +520,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button>
-                                        </td>
+                                        
 
                                     </tr>
                                     <tr id="R2" class="disp">
@@ -534,9 +532,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button>
-                                        </td>
+                                       
 
                                     </tr>
                                     <tr id="R3" class="disp">
@@ -548,8 +544,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
+                                        
 
                                     </tr>
                                     <tr id="R4" class="disp">
@@ -561,9 +556,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
-
+                                        
                                     </tr>
                                     <tr id="R5" class="disp">
                                         <td></td>
@@ -574,8 +567,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
+                                        
 
                                     </tr>
                                     <tr id="R6" class="disp">
@@ -587,9 +579,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
-
+                                       
                                     </tr>
 
                                     <tr id="R7" class="disp">
@@ -601,8 +591,7 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
+                                        
 
                                     </tr>
 
@@ -615,16 +604,12 @@ export default function App()
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA5">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA6">NA </textarea></span></td>
                                         <td><span class="dragdrop" draggable="true"><textarea id="TA7">NA </textarea></span></td>
-                                        <td style={{ borderColor: "white" }}><button type="button" class="btn btn-danger"
-                                            onClick={(e) => deleteRow(e)}>Delete</button></td>
+                                       
 
                                     </tr>
                                 </table>
 
-                                <button onClick={addRow} type="button" id="add" class="btn btn-primary addnew">Add New  <i
-                                    style={{ color: "white" }} class="fa fa-plus" aria-hidden="true"></i></button>
-
-
+                                
                                 <div className="doctor-singnature">
                                     <h6>{"Dr. "+doctorName}</h6>
 				    <div class='inputWithButton'>
