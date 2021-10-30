@@ -167,7 +167,6 @@ export default function App()
 	document.getElementById("refreshsig").style.visibility = "hidden";
 
         const divToDisplay = document.getElementById('pdfcontainer')
-        document.getElementById("add").classList.add('disp')
         document.getElementById("send").classList.add('disp')
         var HTML_Width = $("#pdfcontainer").width();
         var HTML_Height = $("#pdfcontainer").height();
