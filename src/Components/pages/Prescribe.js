@@ -218,18 +218,12 @@ export default function App()
             });
             
             let result1 = res.data;
-            console.log(result1);
+            console.log(result1); 
             
-            try {
                 const patientdetails={displayEmail,displayName,result1}
-                
                 const PdfRes=await axios.post("https://voice-prescription-ai.herokuapp.com/doctor/sendpdf",patientdetails);
                 Swal('Email','Email Sent Successfully!!!','success');
     
-        }
-        catch (err) {
-            err.response.data.msg && Swal('Email','Error Occured while sending email','error')
-        }
     }
     //open preview view of prescription
     const handleShow = async () => {
