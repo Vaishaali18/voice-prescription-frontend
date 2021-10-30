@@ -211,7 +211,7 @@ export default function App()
         }
         const json = JSON.stringify(obj);
         console.log(json);
-          let res = await axios.post('https://voice-fastapi.herokuapp.com/data', json,{
+          let res = await axios.post('https://voice-fastapi.herokuapp.com/pdf', json,{
                 headers: {
                     'content-type': 'application/json'
                   }
