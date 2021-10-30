@@ -124,7 +124,7 @@ export default function App()
             document.querySelector("#R" + String(i + 1) + " td span #TA3").value = data[i]["STRENGTH"];
             document.querySelector("#R" + String(i + 1) + " td span #TA4").value = data[i]["ROUTE"];
             document.querySelector("#R" + String(i + 1) + " td span #TA5").value = data[i]["FORM"];
-            document.querySelector("#R" + String(i + 1) + " td span #TA6").value = data[i]["B-DOS"];
+            document.querySelector("#R" + String(i + 1) + " td span #TA6").value = data[i]["DOSAGE"];
             document.querySelector("#R" + String(i + 1) + " td span #TA7").value = data[i]["FREQUENCY"];
             document.getElementById("R" + String(i + 1)).classList.remove("disp");
             setCurrentRow(currentRow + 1)
