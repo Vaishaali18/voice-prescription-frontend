@@ -27,7 +27,7 @@ export default function Login() {
         
             const loginUser={email,password}
             console.log(email,password)
-            if(email === "admin@gmail.com" && password === "admin")
+            if(email === "admin@gmail.com" && password === "adminmedi")
             {
                 history.push("/admin");
             }
