@@ -28,7 +28,7 @@ export default function Home() {
 							<div class="row ">
 								<div class="col-lg-5 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
 									<div class="section-title">
-										<h1 data-aos="fade-up" class="borderbottom aos-init aos-animate">Search Your Doctor, Make an appointment</h1>
+										<h1 data-aos="fade-up" class="borderbottom aos-init aos-animate">Search Your Doctor now, Make an appointment</h1>
 										<p data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">The best of modern healthcare to ensure you stay healthy, always.</p>
 									</div>
 
@@ -47,4 +47,5 @@ export default function Home() {
 		</div>
 
 	);
+
 }
